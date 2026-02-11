@@ -1,0 +1,28 @@
+{
+  "name": "express",
+  "version": "1.0.0",
+  "description": "��#\u0000 \u0000e\u0000x\u0000p\u0000r\u0000e\u0000s\u0000s\u0000\r\u0000 \u0000",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "node index.js",
+    "pre": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandomartinez-neoland/express.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/fernandomartinez-neoland/express/issues"
+  },
+  "homepage": "https://github.com/fernandomartinez-neoland/express#readme",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.2.0"
+  }
+}
