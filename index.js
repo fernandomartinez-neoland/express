@@ -1,13 +1,21 @@
 import express from 'express';
+import { suma } from './suma.js'
 
 const app = express();
-const PORT=3000;
+const PORT = 3000;
+
+app.use(express.json())
 
 app.get('/', (req, res) => {
-    res.status(200).send('Hola Mundooooooo!')
+    res.status(500).send('Hola Mundooooooo!')
 })
-app.post('/post', (req, res)=>{
-    res.status(201).send('hola post')
+app.post('/suma', (req, res) => {
+    console.log(req.body.numB)
+    const numberA=req.body.numA;
+    const numberB=req.body.numB;
+
+
+    res.status(201).send(suma(numberA, numberB))
 })
 
 app.listen(PORT, () => {
