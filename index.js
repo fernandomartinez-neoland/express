@@ -4,7 +4,10 @@ const app = express();
 const PORT=3000;
 
 app.get('/', (req, res) => {
-    res.send('Hola Mundo!')
+    res.status(200).send('Hola Mundooooooo!')
+})
+app.post('/post', (req, res)=>{
+    res.status(201).send('hola post')
 })
 
 app.listen(PORT, () => {
